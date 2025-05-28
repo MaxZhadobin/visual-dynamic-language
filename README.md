@@ -1,22 +1,32 @@
-🧾 Concept Note: Visual Dynamic Language (VDL)
+## 🧾 Concept Note: Visual Dynamic Language (VDL)
 
-Author: Maxim ZhadobinDate: 28.05.2025
-Version: v0.1
+**Author:** Maxim Zhadobin
+**Date:** 28.05.2025
+**Version:** v0.1
 
-📘 Title
+---
 
-Visual Dynamic Language (VDL): Structured Representation of Visual Events and Semantics for LLMs in Real Time
+### 📘 Title
 
-🎯 Purpose
+**Visual Dynamic Language (VDL): Structured Representation of Visual Events and Semantics for LLMs in Real Time**
 
-VDL is an extension of VSL (Visual Scene Language), enabling language models and AI systems to perceive and interpret dynamic visual streams — including video, real-time camera input, AR/VR interaction, or gameplay footage — through a structured, machine-readable layer of semantic information.
+---
 
-📐 Core Idea
+### 🎯 Purpose
 
-VDL translates visual motion and scene transitions into a format that LLMs can reason about — just like VSL enables static scene representation. It introduces a temporal layer over VSL with tracked changes, actions, states, and interactions.
+VDL is an extension of VSL (Visual Scene Language), enabling language models and AI systems to perceive and interpret **dynamic visual streams** — including video, real-time camera input, AR/VR interaction, or gameplay footage — through a structured, machine-readable layer of semantic information.
 
-🧱 Structure Example (VDL JSON Snippet)
+---
 
+### 📐 Core Idea
+
+VDL translates visual motion and scene transitions into a format that LLMs can reason about — just like VSL enables static scene representation. It introduces a **temporal layer** over VSL with tracked changes, actions, states, and interactions.
+
+---
+
+### 🧱 Structure Example (VDL JSON Snippet)
+
+```json
 {
   "timestamp": 1.24,
   "objects": [
@@ -36,54 +46,59 @@ VDL translates visual motion and scene transitions into a format that LLMs can r
     }
   ]
 }
+```
 
-🔄 Temporal Semantics
+---
+
+### 🔄 Temporal Semantics
 
 VDL introduces time-awareness:
 
-timestamp or frame_id
+* `timestamp` or `frame_id`
+* `object lifecycle`: appears, transforms, disappears
+* `action state`: walk, turn, sit, interact, signal
+* `inter-object relations`: follow, collide, support, respond
 
-object lifecycle: appears, transforms, disappears
+---
 
-action state: walk, turn, sit, interact, signal
+### 📡 Use Cases
 
-inter-object relations: follow, collide, support, respond
+* **Real-time visual assistants** (AR glasses, robotics, surgery tools)
+* **Video comprehension** and semantic summarization
+* **Game world state interpretation**
+* **Human behavior modeling**
+* **Event-based video editing or synthesis**
 
-📡 Use Cases
+---
 
-Real-time visual assistants (AR glasses, robotics, surgery tools)
+### 🔁 Integration with VSL
 
-Video comprehension and semantic summarization
+VDL is **not a separate format**, but a **dynamic extension** to Visual Scence Language (VSL). Every frame or segment builds upon the VSL structure — enriched with change tracking, temporal logic, and motion semantics.
 
-Game world state interpretation
+---
 
-Human behavior modeling
+### 💥 Why It Matters
 
-Event-based video editing or synthesis
+This is not just video analysis. It's **machine cognition over time**:
 
-🔁 Integration with VSL
+* Perception becomes structured
+* Reasoning becomes stateful
+* Actions can be grounded in observed visual change
 
-VDL is not a separate format, but a dynamic extension to Visual Scence Language (VSL). Every frame or segment builds upon the VSL structure — enriched with change tracking, temporal logic, and motion semantics.
+> Just as VSL gives LLMs a way to think about space,
+> VDL gives them a way to think about **change**.
 
-💥 Why It Matters
+---
 
-This is not just video analysis. It's machine cognition over time:
-
-Perception becomes structured
-
-Reasoning becomes stateful
-
-Actions can be grounded in observed visual change
-
-Just as VSL gives LLMs a way to think about space,
-VDL gives them a way to think about change.
-
-📜 License
+### 📜 License
 
 Creative Commons Attribution 4.0 International (CC BY 4.0)
 
-🧠 Note from the Author
+---
 
-VDL continues the journey that began with VSL: transforming language models into structured visual thinkers.It is proposed as an open direction for experimentation, research, and standardization in AI spatial-temporal reasoning.
+### 🧠 Note from the Author
 
-Maxim Zhadobin
+VDL continues the journey that began with VSL: transforming language models into structured visual thinkers.
+It is proposed as an open direction for experimentation, research, and standardization in AI spatial-temporal reasoning.
+
+**Maxim Zhadobin**
