@@ -1,0 +1,33 @@
+{
+  "timestamp": 2.75,
+  "objects": [
+    {
+      "id": "car1",
+      "type": "vehicle",
+      "position": {
+        "x": 400,
+        "y": 150
+      },
+      "state": "moving",
+      "direction": "left",
+      "speed": 3.5
+    },
+    {
+      "id": "pedestrian1",
+      "type": "human",
+      "position": {
+        "x": 100,
+        "y": 300
+      },
+      "state": "standing"
+    }
+  ],
+  "events": [
+    {
+      "type": "proximity_alert",
+      "source": "car1",
+      "target": "pedestrian1",
+      "distance": 2.0
+    }
+  ]
+}

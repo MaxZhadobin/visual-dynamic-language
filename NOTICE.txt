@@ -1,0 +1,17 @@
+NOTICE
+
+This repository constitutes a defensive publication for the concept and framework titled:
+
+Visual Dynamic Language (VDL) — A structured semantic representation of visual events and dynamics for use by large language models (LLMs).
+
+The author of this concept, Maxim Zhadobin, hereby publishes this specification and related files to:
+
+1. Establish authorship and conceptual priority.
+2. Prevent exclusive patenting of the described method and format by third parties.
+3. Enable open use, research, and community-driven development.
+
+This publication is released under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+Users are free to share and adapt the materials, with proper attribution.
+
+Publication date: 28 May 2025
+Author: Maxim Zhadobin
